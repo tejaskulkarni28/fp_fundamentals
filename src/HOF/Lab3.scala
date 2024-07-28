@@ -13,8 +13,8 @@ object Lab3 extends App {
 
   // Anonymous function
   // Explicit return type
-  val fn4:(String)=>String = (name: String)=>String
-  val fn5:(Int, String)=>String = (id: Int, name: String)=>String
+//  val fn4:(String)=>String = (name: String)=>String
+//  val fn5:(Int, String)=>String = (id: Int, name: String)=>String
 
 
   // Higher order function without anonymous function

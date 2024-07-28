@@ -1,4 +1,4 @@
-package Lambdas
+package Lambdas // also called anonymous functions
 
 object Lab1 extends App {
   // Inferred return type
