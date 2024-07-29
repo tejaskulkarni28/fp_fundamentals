@@ -15,4 +15,5 @@ object Lab1 extends App {
   private val justReturnModifiedTemperature1: Int => Int = identity
   private val IGotARemote = remote(true)(false)(20)(justReturnModifiedTemperature1)
   println(IGotARemote)
+  
 }

@@ -11,4 +11,10 @@ object Playground5 extends App {
   println(list.map(x=>x))
   println(list.filter(x => x % 2 == 0))
   println(list.flatMap(_.toString))
+
+  private def findLast[A](list: List[A]): A = list match {
+    case head :: Nil => head
+    case _::tail => findLast(tail)
+  }
+  println(findLast(list))
 }
