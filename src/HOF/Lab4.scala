@@ -15,4 +15,15 @@ object Lab4 extends App {
   // In the above example loopNTimes(Int=>Int, Int, Int)->(f, x, n)
   // f is a function, x is just some value which will be injected in the function f and will be processed as per the
   // function we provide. And n is the number of times the recursion will run. (Like a for loop where i=0, i<10; i++)
+
+  private val betterLoopNTimes:(Int=>Int, Int)=>(Int=>Int)=(f:Int=>Int, n:Int)=>{
+    // return the lambda function instead of just an Integer
+    if(n<=0) (x:Int)=>x
+    else (x:Int)=>betterLoopNTimes(f, n-1)(f(x))
+  }
+  private val betterAddNTimes:(Int)=>Int=(x:Int)=>{
+    x + 1
+  }
+  val p = betterLoopNTimes(betterAddNTimes, 10)
+  println(p(1))
 }
