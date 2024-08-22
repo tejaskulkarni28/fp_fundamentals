@@ -3,7 +3,7 @@ package TuplesMaps
 object Lab1 extends App {
 
   // tuples are finite ordered kind of lists
-  val student: (Int, String) = (22, "Tejas Kulkarni")
+  val student: (Int, String) = (22, "Tejas Kulkarni") // this is a tuple
   println(student._1)
   println(student._2)
 
