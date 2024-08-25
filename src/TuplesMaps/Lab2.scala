@@ -42,7 +42,6 @@ object Lab2 extends App {
 
 
 
-
   def friendsOfEach(friends:Map[String, List[String]]):Unit={
     friends.foreach(pointer => {
       println(s"${pointer._1} friends are ${pointer._2.mkString(", ")}")
