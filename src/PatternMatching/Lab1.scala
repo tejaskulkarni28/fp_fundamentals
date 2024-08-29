@@ -18,4 +18,17 @@ object Lab1 extends App {
   }
   println(matchRandomNumber)
 
+  // 2. Sealed PM
+  sealed class Animal
+  case class Dog(breed: String) extends Animal
+  case class Parrot(greetings: String) extends Animal
+
+  // upcasting
+  val Lucy:Animal = new Dog("Lhasa Apso")
+  val result = Lucy match {
+    case Dog(breed) => s"My breed is $breed"
+    case _ => "Something else"
+  }
+  println(result)
+
 }
