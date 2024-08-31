@@ -60,8 +60,8 @@ object Lab1 extends App {
 
   def matchType(device: Device):String = {
     device match {
-      case apple: Apple => s" This is type apple"
-      case android: Android => s"This is type android"
+      case _: Apple => s" This is type apple"
+      case _: Android => s"This is type android"
       case _ => s"Maybe some another type!!!"
     }
   }
