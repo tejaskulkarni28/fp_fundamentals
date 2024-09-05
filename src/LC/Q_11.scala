@@ -35,4 +35,8 @@ object Q_11 extends App {
     maxarea
   }
   println(function(Array(1,8,6,2,5,4,8,3,7)))
+
+  val hashset = scala.collection.immutable.HashSet(1,2,3)
+  val array = hashset.toString.toArray
+  println(array)
 }
